@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animals Pics</title>
+	<link rel="stylesheet" media="screen" href="CSS/animals.css">
+</head>
+<body>
+	<div><h1>Welcome to Animals Pics Plus</h1></div>
+	<img id="animalimg" src="" />
+	<br />
+	<p>Type in a name of an animal, then click Go!</p>
+	
+	Animal: <input id="animalinput" type="text" maxlength="30" autofocus>
+	<button type="button" onclick="getAnimal()">Go!</button>
+	<p id="feedback"></p>
+
+	<script>
+	function getAnimal() {
+
+		// what animal is this?
+		var ani = document.getElementById("animalinput").value;
+		var image = document.getElementById("animalimg");
+		var text = document.getElementById("feedback");
+
+		console.log("You choose: " + ani);
+		if (ani == "cat") {
+			image.src = "images/small-cat1.png";
+			text.innerHTML = "Great Success!, its a cat! :)";
+		} else if (ani == "dog") {
+			image.src = "images/small-dog1.png";
+			text.innerHTML = "Great! its a small dog! :)";
+		} else {
+			image.src = "images/not_found.png";
+			text.innerHTML = "Oh Well, image for <em>" + ani + "</em> does not exist :( Please Try again. <em>Hint</em>: try <em>dog</em> or <em>cat</em>.";
+		}
+	}
+	</script>
+</body>
+</html>
+
