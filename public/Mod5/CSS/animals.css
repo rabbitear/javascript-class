@@ -1,0 +1,23 @@
+body {
+	font-family: Arial;
+	color: #FFAAAA;
+	background-color: #AA3939;
+}
+
+div h1 {
+	text-shadow: 5px 5px 5px #FF0000;
+	color: #D46A6A;
+	background-color: #801515;
+	text-align: center;
+	width: 520px;
+	border-style: solid;
+	border-width: 5px;
+	padding: 10px;
+	margin: 5px;
+}
+
+em {
+	font-weight: bold;
+}
+
+
