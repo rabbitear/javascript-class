@@ -32,3 +32,19 @@ p {
     padding-top: 15px;
 }
 
+.modlist {
+    display: inline-block;
+    background-color: yellow;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 5px;
+    //height: 60px;
+    //width: 120px;
+    border-radius: 15%;
+    border: 5px solid red;
+    text-align: center;
+    text-margin: auto;
+    //padding-top: 15px;
+    padding: 15px;
+}
+
