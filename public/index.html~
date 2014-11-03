@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-</html>
+<html>
 <head>
     <title>Jon's JavaScript class page.</title>
-	<link rel="stylesheet" media="screen" href="CSS/mod6styles.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="CSS/style-main.css" />
 </head>
 <body>
     <h1>Jon's JavaScript class page.</title>
@@ -12,12 +12,15 @@
 	<li><a href="rsp.html">Rock Scissors Paper</a></li>
 	<li><a href="Mod5/animals.html">Animals Search</a></li>
     </ul>
-    <div class="mods"><a href="Mod2/">Mod2</a></div>
-    <div class="mods"><a href="Mod3/">Mod3</a></div>
-    <div class="mods"><a href="Mod4/">Mod4</a></div>
-    <div class="mods"><a href="Mod5/">Mod5</a></div>
-    <div class="mods"><a href="Mod6/">Mod6</a></div>
-    <div class="mods"><a href="Mod7/">Mod7</a></div>
-    <div class="mods"><a href="Mod9/">Mod9</a></div>
+    <div id="modbox">
+        <div class="mods"><a href="Mod2/">Mod2</a></div>
+        <div class="mods"><a href="Mod3/">Mod3</a></div>
+        <div class="mods"><a href="Mod4/">Mod4</a></div>
+        <div class="mods"><a href="Mod5/">Mod5</a></div>
+        <div class="mods"><a href="Mod6/">Mod6</a></div>
+        <div class="mods"><a href="Mod7/">Mod7</a></div>
+        <div class="mods"><a href="Mod9/">Mod9</a></div>
+    </div>
 </body>
-<html>
+</html>
+

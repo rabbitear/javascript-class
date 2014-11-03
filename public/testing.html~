@@ -2,11 +2,7 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <p>
-<em>
-
-
-    ([Hello] )
-</em>
+([<em>Hello</em>] world!)
 </p>
 
 <html>
