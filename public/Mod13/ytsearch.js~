@@ -2,14 +2,7 @@
 myak = 'AIzaSyDihpaf2iGC3kUp28b-OAvBZr5VgRax7hs';
 
 function showResponse(response) {
-    // here I should use JSON.parse() it has two args the JSON formatted string
-    // and a optional ''replacer'' function.
-    // old code:
-    //var responseString = JSON.stringify(response.items[0], '', 2);
-    // WHAT NOW?
-    // 1. I want the title and the thumbnail image.
-    // 2. then I download the above image.
-    var responeString = JSON.parse(response);
+    var responseString = JSON.stringify(response.items[0], '', 2);
     document.getElementById('response').innerHTML += responseString;
 }
 
