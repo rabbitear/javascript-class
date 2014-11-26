@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>More jQuery</h1>
+<a href="query-ani1.html">jQuery Box Animate</a>
+
+<script type="text/javascript" scr="jquery.js"></script>
+<script>
+console.log("test1");
+ $(document).ready(function(){
+        console.log("test2");
+        alert("thanks for waiting..");
+});
+</script>
+</body>
+</html>

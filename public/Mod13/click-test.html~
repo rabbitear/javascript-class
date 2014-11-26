@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>jQuery click</title>
+<style>
+body {
+    background-color: black;
+}
+.topdiv {
+    padding: 16px;
+    font-family: Verdana, Arial;
+    font-size: 30px;
+    text-align: center;
+    background-color: #385385;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+p {
+    font-family: Verdana, Arial;
+    font-size: 18px;
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+p:hover {
+    background: #1C2A42;
+}
+.slideshow {
+    height: 232px;
+    width: 232px;
+    margin: auto;
+}
+.slideshow img {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+</style>
+</head>
+<body>
+<div id="target" class="topdiv">
+    Pictures of China using Cycle Plugin
+</div>
+
+<br />
+
+<p>This words</p>
+<p>will disappear</p>
+<p>When you click the mouse on them</p>
+
+<br />
+
+<div class="slideshow">
+    <img src="images/Great wall of China.jpg" width="200" height="200" />
+    <img src="images/images (1).jpg" width="200" height="200" />
+    <img src="images/images (2).jpg" width="200" height="200" />
+    <img src="images/images (3).jpg" width="200" height="200" />
+    <img src="images/images (4).jpg" width="200" height="200" />
+    <img src="images/images (5).jpg" width="200" height="200" />
+    <img src="images/images (6).jpg" width="200" height="200" />
+    <img src="images/images (7).jpg" width="200" height="200" />
+    <img src="images/images.jpg" width="200" height="200" />
+    <img src="images/shanghai-china.jpg" width="200" height="200" />
+    <img src="images/tumblr_ljf6xuxoLD1qzdutv.jpg" width="200" height="200" />
+</div> <!-- class sideshow -->
+
+<br />
+
+<div id="other" class="topdiv">
+    Trigger the handler
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>
+<script>
+$(document).ready(function() {
+    $( "#target" ).click(function() {
+        alert( "Handler for .click() called." );
+    });
+    $( "#other" ).click(function() {
+        $( "#target" ).click();
+    });
+    $( "p" ).click(function() {
+        $( this ).slideUp();
+    });
+    $('.slideshow').cycle({
+        fx: 'shuffle' // fade, scrollUp, shuffle
+    });
+});
+</script>
+</body>
+</html>
+
