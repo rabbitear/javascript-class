@@ -39,6 +39,8 @@ p:hover {
     background-color: #eee;
 }
 </style>
+
+
 </head>
 <body>
 <div id="target" class="topdiv">
@@ -53,7 +55,7 @@ p:hover {
 
 <br />
 
-<div class="slideshow">
+<div class="slideshow" style="display: none;">
     <img src="images/Great wall of China.jpg" width="200" height="200" />
     <img src="images/images (1).jpg" width="200" height="200" />
     <img src="images/images (2).jpg" width="200" height="200" />
@@ -67,6 +69,7 @@ p:hover {
     <img src="images/tumblr_ljf6xuxoLD1qzdutv.jpg" width="200" height="200" />
 </div> <!-- class sideshow -->
 
+<br />
 <br />
 
 <div id="other" class="topdiv">
@@ -89,6 +92,7 @@ $(document).ready(function() {
     $('.slideshow').cycle({
         fx: 'shuffle' // fade, scrollUp, shuffle
     });
+    $('.slideshow').fadeIn("slow");
 });
 </script>
 </body>
