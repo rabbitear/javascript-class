@@ -11,6 +11,21 @@ h1 {
     font-family: Verdana, Arial;
     font-size: 28px;
 }
+h2 {
+    font-family: Verdana, Arial;
+    font-size: 22px;
+    color: yellow;
+    text-align: center;
+}
+h3 {
+    font-family: Verdana, Arial;
+    font-size: 16px;
+    color: green;
+    text-align: center;
+}
+strong {
+    color: blue;
+}
 p {
     color: lightblue;
     font-family: Verdana, Arial;
@@ -54,20 +69,50 @@ table {
     <h1>Jon Bradley's JavaScript Project Page</h1> 
 </div><!-- end of titlediv -->
 <br />
+<h2>About These Projects</h2>
 <p>
-Welcome to my JavaScript's Class project page. Small projects that I
-worked on in javascript 109.  There are 6 mini projects that that came
+Welcome to my JavaScript's Project Page. Small projects that I worked
+on during javascript 109 class.  There are 6 mini projects that came
 out of playing around and testing things in JavaScript and JQuery, and
 one final main project, the Chinese Flash cards.  Which I will actually
 use to help study for my Chinese class.  Hope you Enjoy, Happy Holidays
 too!
 </p>
+<h2>Project Descriptions</h2>
+<h3>[scroll all the way down for links that goto them]</h3>
+<p>
+<strong>Project #1</strong>: Is simple pictures of china that scroll through using a
+JQuery plugin called <a href="http://www.malsup.com/jquery/cycle/">Cycle</a>. This was
+my first time using a plugin for JQuery.
+</p><p>
+<strong>Project #2</strong>: Is a rock scissors paper game. While running through the
+<a href="http://www.codecademy.com/">CodeCademy</a> tutorials on javascript they have
+you build a simple rock scissors paper game.  I took this game logic and expanded it
+to an a lot more playable game with extra bells and whistles.
+</p><p>
+<strong>Project #3</strong>: This project is probably not complete, I was going use this <em>terminal</em> plugin that I found for JQuery, which I think was cool and could make some kind of adventure games in text or something, but this specific project I did not have time for.
+</p><p>
+<strong>Project #4</strong>: This project actually started a while back, since I knew a little html and css already.  I did not know much of any JavaScript at the time, so I recently added new code to make it alot more attractive hopefully.
+</p><p>
+<strong>Project #5</strong>: Is a minimal Animal Search, you type in a name and it comes up with a
+picture of that name.  There are not too many animals, I'm mostly trying out how
+to input text for search etc.
+</p><p>
+<strong>Project #6</strong>: This is suppose to be a Youtube Search for looking up videos, you
+can do that on regular youtube sight, but the youtube site is always slow for me on my computer
+so made this search as something more light weight in the browser.
+</p><p>
+<strong>Final Project</strong>: Explained a little bit in the intro paragraph, this is the
+Chinese Flash cards, where I can flash up a card, you try and guess it, then you can trun it
+over for more information.
 <br />
 <!-- end of title and main paragraph blurb -->
 <div class="titlediv">
     <h1>Class Mini Projects with JavaScript</h1>
 </div><!-- end of class titlediv -->
 <br />
+<h2>Smaller Projects</h2>
+<h3>[click on the picture to bring you to the project]</h3>
 <!-- ======== Mini Projects Start ======== --->
 <table border="0" cellspacing="20"><tr><td>
     <div id="proj1" class="pics">
@@ -115,6 +160,8 @@ too!
 <div class="titlediv">
     <h1>Main Event Project with JavaScript</h1>
 </div><!-- end of titlediv -->
+<h2>Final Project</h2>
+<h3>Click on the pic :)</h3>
 <br />
 <!-- ======== Final Project Start ======== --->
 <div id="proj0" class="pics">
