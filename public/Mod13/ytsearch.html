@@ -34,6 +34,12 @@ h1 {
 #titlebox {
     width: 478px;
     text-align: center;
+}
+#resultmsg {
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 16px;
+}
 </style>
 </head>
 <body>
@@ -41,6 +47,7 @@ h1 {
     <h1>YouTube Fast Search</h1>
 </div>
 <br />
+<p id="resultmsg" style="display: none;">[Scroll down the page to see the results]</h2>
 <div class="blurbbox" id="aboutbox">
     <p>
     Welcome to youtube fast search! This site loads alot faster than
@@ -58,6 +65,7 @@ h1 {
 </div>
     <pre id="response"></pre>
 
+<script type="text/javascript" scr="jquery-1.11.1.min.js" charset="utf-8"></script>
 <!-- Code for youtube search -->
 <script type="text/javascript" src="../jquery-1.11.1.min.js"> charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
@@ -103,6 +111,7 @@ function search() {
 
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
+    $('#resultmsg').fadeIn('slow');
     showResponse(response);
 }
 </script>
