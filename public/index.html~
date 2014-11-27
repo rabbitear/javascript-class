@@ -1,122 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jon's JavaScript class page.</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="CSS/style-main.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Jon's JavaScript Project Page</title>
+<style type="text/css" media="screen">
+body { 
+    background-color: black;
+}
+h1 {
+    font-family: Verdana, Arial;
+    font-size: 28px;
+}
+p {
+    color: lightblue;
+    font-family: Verdana, Arial;
+    font-size: 30px;
+    margin: 25px;
+    text-align: justify;
+}
+.pics {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titlediv {
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #385385;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+p {
+    text-indent: 50px;
+    font-family: Verdana, Arial;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
 </head>
 <body>
-    <h1>Jon's JavaScript class page.</title>
-    <p>This site forms all the projects that we have in my javascript class</p>
-    <ul>
-	<li><a href="ChineseFlash/">ChineseFlash</a></li>
-	<li><a href="rsp.html">Rock Scissors Paper</a></li>
-	<li><a href="Mod5/animals.html">Animals Search</a></li>
-    </ul>
-    <div id="modbox">
-        <div class="mods">
-            <div class="modlist">
-                <h3>Mod2</h3>
-            </div>
-            <div class="modlist">
-                <a href="./Mod2/Page1.html">Page1</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod2/Page2.html">Page2</a>
-            </div>
-        </div>
+<!-- start of title and main paragraph blurb -->
+<div class="titlediv">
+    <h1>Jon Bradley's JavaScript Project Page</h1> 
+</div><!-- end of titlediv -->
+<br />
+<p>
+Welcome to my JavaScript's Class project page. Small projects that I
+worked on in javascript 109.  There are 6 mini projects that that came
+out of playing around and testing things in JavaScript and JQuery, and
+one final main project, the Chinese Flash cards.  Which I will actually
+use to help study for my Chinese class.  Hope you Enjoy, Happy Holidays
+too!
+</p>
+<br />
+<!-- end of title and main paragraph blurb -->
+<div class="titlediv">
+    <h1>Class Mini Projects with JavaScript</h1>
+</div><!-- end of class titlediv -->
+<br />
+<!-- ======== Mini Projects Start ======== --->
+<table border="0" cellspacing="20"><tr><td>
+    <div id="proj1" class="pics">
+        <img src="images/miniprojss/proj1-1.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj1-2.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj1-3.jpg" width="200" height="200" /> 
+        <a href="Mod13/pictures-of-china-sides.html">pictures of china</a>
+    </div>
+    </td><td>
+    <div id="proj2" class="pics">
+        <img src="images/miniprojss/proj2-1.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj2-2.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj2-3.jpg" width="200" height="200" /> 
+    </div>
+    </td><td>
+    <div id="proj3" class="pics">
+        <img src="images/miniprojss/proj3-1.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj3-2.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj3-3.jpg" width="200" height="200" /> 
+    </div>
+    </td></tr>
+    <tr><td>
+    <div id="proj4" class="pics">
+        <img src="images/miniprojss/proj4-1.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj4-2.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj4-3.jpg" width="200" height="200" /> 
+        <a href="http://juliashairsalon.biz">Julias Hair Salon</a>
+    </div>
+    </td><td>
+    <div id="proj5" class="pics">
+        <img src="images/miniprojss/proj5-1.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj5-2.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj5-3.jpg" width="200" height="200" /> 
+        <a href="Mod5/animals.html">Animals Search</a>
+    </div>
+    </td><td>
+    <div id="proj6" class="pics">
+        <img src="images/miniprojss/proj6-1.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj6-2.jpg" width="200" height="200" /> 
+        <img src="images/miniprojss/proj6-3.jpg" width="200" height="200" /> 
+    </div>
+    </td></tr>
+</table>
+<!-- ========= Mini Projects End ========= --->
+<div class="titlediv">
+    <h1>Main Event Project with JavaScript</h1>
+</div><!-- end of titlediv -->
+<br />
+<!-- ======== Final Project Start ======== --->
+<div id="proj0" class="pics">
+    <img src="images/miniprojss/proj0-1.jpg" width="200" height="200" /> 
+    <img src="images/miniprojss/proj0-2.jpg" width="200" height="200" /> 
+    <img src="images/miniprojss/proj0-3.jpg" width="200" height="200" /> 
+</div>
+<!-- ========= Final Project End ========= --->
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>
 
-        <div class="mods">
-            <div class="modlist">
-                <h3>Mod3</h3>
-            </div>
-            <div class="modlist">
-                <a href="./Mod3/comstat1.html">comstat1.html</a>
-            </div>
-        </div>
-
-        <div class="mods">
-            <div class="modlist">
-                <h3>Mod4</h3>
-            </div>
-            <div class="modlist">
-                <a href="./Mod4/zen.html">Zen</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod4/myzen.html">MyZen</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod4/formtest.html">formtest</a>
-            </div>
-        </div>
-
-        <div class="mods">
-            <div class="modlist">
-                <h3>Mod5</h3>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/example1.html">example1</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/example2.html">example2</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/lightbulb.html">lightbulb</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/validateInput.html">validateInput</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/consoleDebug.html">consoleDebug</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/animals.html">animals</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/index.html">index</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/cssfont.html">cssfont</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod5/date.html">date</a>
-            </div>
-        </div>
-
-
-        <div class="mods">
-            <div class="modlist">
-                <h3>Mod6</h3>
-            </div>
-            <div class="modlist">
-                <a href="./Mod6/write.html">write</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod6/triangle.html">triangle</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod6/fuzzbuzz.html">fuzzbuzz</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod6/fuzzbuzz2.html">fuzzbuzz2</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod6/validate.html">validate</a>
-            </div>
-        </div>
-
-        <div class="mods">
-            <div class="modlist">
-                <h3>desc</h3>
-            </div>
-            <div class="modlist">
-                <a href="./Mod7/chinese.html">chinese</a>
-            </div>
-            <div class="modlist">
-                <a href="./Mod7/play.html">play</a>
-            </div>
-        </div> 
-    </div>        
-    <br />
+<script type="text/javascript" charset="utf-8">
+console.log('start');
+$(document).ready(function() {
+    // ===== start of slideshow code =====
+    // side show for proj1
+    $('#proj1').cycle({ fx: 'fade', speed: 2500 });
+    // side slow for proj2
+    $('#proj2').cycle({ fx: 'fade', speed: 1000 });
+    // slideslow for proj3
+    $('#proj3').cycle({ fx: 'fade', speed: 1500 });
+    // slideslow for proj4
+    $('#proj4').cycle({ fx: 'fade', speed: 2000 });
+    // slideslow for proj5
+    $('#proj5').cycle({ fx: 'fade', speed: 2500 });
+    // slideslow for proj6
+    $('#proj6').cycle({ fx: 'fade', speed: 4000 });
+    // slideslow for proj0
+    $('#proj0').cycle({ fx: 'fade', speed: 3000 });
+    // ===== end of slideslow code =====
+    // connect the -links- of each project to its link.
+    $('.pics').click(function() {
+        window.location=$(this).find("a").attr("href");
+        return false;
+    });
+    // show everything after animations have started.
+    $('.pics').fadeIn("slow");
+});    
+</script>
 </body>
 </html>
-    

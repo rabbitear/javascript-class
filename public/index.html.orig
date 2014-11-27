@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jon's JavaScript class page.</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="CSS/style-main.css" />
+</head>
+<body>
+    <h1>Jon's JavaScript class page.</title>
+    <p>This site forms all the projects that we have in my javascript class</p>
+    <ul>
+	<li><a href="ChineseFlash/">ChineseFlash</a></li>
+	<li><a href="rsp.html">Rock Scissors Paper</a></li>
+	<li><a href="Mod5/animals.html">Animals Search</a></li>
+    </ul>
+    <div id="modbox">
+        <div class="mods">
+            <div class="modlist">
+                <h3>Mod2</h3>
+            </div>
+            <div class="modlist">
+                <a href="./Mod2/Page1.html">Page1</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod2/Page2.html">Page2</a>
+            </div>
+        </div>
+
+        <div class="mods">
+            <div class="modlist">
+                <h3>Mod3</h3>
+            </div>
+            <div class="modlist">
+                <a href="./Mod3/comstat1.html">comstat1.html</a>
+            </div>
+        </div>
+
+        <div class="mods">
+            <div class="modlist">
+                <h3>Mod4</h3>
+            </div>
+            <div class="modlist">
+                <a href="./Mod4/zen.html">Zen</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod4/myzen.html">MyZen</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod4/formtest.html">formtest</a>
+            </div>
+        </div>
+
+        <div class="mods">
+            <div class="modlist">
+                <h3>Mod5</h3>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/example1.html">example1</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/example2.html">example2</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/lightbulb.html">lightbulb</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/validateInput.html">validateInput</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/consoleDebug.html">consoleDebug</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/animals.html">animals</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/index.html">index</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/cssfont.html">cssfont</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod5/date.html">date</a>
+            </div>
+        </div>
+
+
+        <div class="mods">
+            <div class="modlist">
+                <h3>Mod6</h3>
+            </div>
+            <div class="modlist">
+                <a href="./Mod6/write.html">write</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod6/triangle.html">triangle</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod6/fuzzbuzz.html">fuzzbuzz</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod6/fuzzbuzz2.html">fuzzbuzz2</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod6/validate.html">validate</a>
+            </div>
+        </div>
+
+        <div class="mods">
+            <div class="modlist">
+                <h3>desc</h3>
+            </div>
+            <div class="modlist">
+                <a href="./Mod7/chinese.html">chinese</a>
+            </div>
+            <div class="modlist">
+                <a href="./Mod7/play.html">play</a>
+            </div>
+        </div> 
+    </div>        
+    <br />
+</body>
+</html>
+    
