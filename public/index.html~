@@ -38,6 +38,11 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.pics a {
+    // this needs to be the same as the 
+    // background for it not to show up.
+    color: black;
+}
 .titlediv {
     padding: 4px;
     margin-left: auto;
@@ -153,6 +158,7 @@ over for more information.
         <img src="images/miniprojss/proj6-1.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj6-2.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj6-3.jpg" width="200" height="200" /> 
+        <a href="Mod13/ytsearch.html">YouTubeSearch</a>
     </div>
     </td></tr>
 </table>
@@ -180,11 +186,11 @@ $(document).ready(function() {
     // side show for proj1
     $('#proj1').cycle({ fx: 'fade', speed: 2500 });
     // side slow for proj2
-    $('#proj2').cycle({ fx: 'fade', speed: 1000 });
+    $('#proj2').cycle({ fx: 'fade', speed: 500 });
     // slideslow for proj3
-    $('#proj3').cycle({ fx: 'fade', speed: 1500 });
+    $('#proj3').cycle({ fx: 'fade', speed: 2500 });
     // slideslow for proj4
-    $('#proj4').cycle({ fx: 'fade', speed: 2000 });
+    $('#proj4').cycle({ fx: 'fade', speed: 1500 });
     // slideslow for proj5
     $('#proj5').cycle({ fx: 'fade', speed: 2500 });
     // slideslow for proj6
