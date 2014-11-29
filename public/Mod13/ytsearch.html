@@ -76,12 +76,22 @@ function showResponse(response) {
     // here I should use JSON.parse() it has two args the JSON formatted string
     // and a optional ''replacer'' function.
     // old code:
-    var responseString = JSON.stringify(response.items, '', 2);
+    //var responseString = JSON.stringify(response.items, '', 2);
     // WHAT NOW?
     // 1. I want the title and the thumbnail image.
     // 2. then I download the above image.
     //var responeString = JSON.parse(response);
-    document.getElementById('response').innerHTML += responseString;
+    //var responseString = JSON.parse(response.snippet.title);
+    for(i=0;i<response.items.length;i++) {
+        console.log("i is now: " + i);
+        var vidId = response.items[i].id.videoId;
+        console.log("id is: " + vidId);
+        var vidTitle = response.items[i].snippet.title;
+        console.log("title: ", vidTitle);
+        var vidThumbUrl = response.items[i].snippet.thumbnails.default.url;
+        console.log("ThumbURL: ", vidThumbUrl);
+        document.getElementById('response').innerHTML += "<img src=\"" + vidThumbUrl + "\" />";
+    }    
 }
 
 // Called automatically when JavaScript client library is loaded.
