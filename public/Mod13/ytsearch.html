@@ -33,15 +33,18 @@ div.outer {
     text-align: center;
 }
 div.outer img {
+    width: 260px;
     display: inline;
     margin: 5px;
     border: 1px solid white;
 }
 div.desc {
-    text-align: center;
     width: 280px;
     margin: 5px;
-    border: none;
+    white-space: warp;
+    word-wrap: brake-word;
+    word-break: keep-all;
+    text-align: left;
 }
 #searchbox {
     width: 300px;
@@ -67,7 +70,7 @@ div.desc {
     <h1>YouTube Fast Search</h1>
 </div>
 <br />
-<p id="resultmsg" style="display: none;">[Scroll down the page to see the results]</h2>
+<p id="resultmsg" style="display: none;">[Scroll down and Click on a Picture]</h2>
 <div class="blurbbox" id="aboutbox">
     <p>
     Welcome to youtube fast search! This site loads alot faster than
@@ -123,7 +126,7 @@ function showResponse(response) {
         searchResStr += "<a href=\"http://youtube.com/watch?v=" + vidId + "\">";
         searchResStr += "<img src=\"" + vidThumbUrl + "\" /></a>";
         searchResStr += "<div class=\"desc\">";
-        searchResStr += "<p><strong>Title:</strong> " + vidTitle + "</p><br />";
+        searchResStr += "<strong>Title:</strong> " + vidTitle + "<br />";
         searchResStr += "<strong>Posted:</strong> " + vidPubAt;
         searchResStr += "</div><!-- desc div -->";
         searchResStr += "</div><!-- outer div -->";
@@ -149,7 +152,7 @@ function search() {
     console.log("Your choice is: " + ytquery);
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
-        maxResults: 9,
+        maxResults: 20,
         q: ytquery,
     });
     
