@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- fast yoututbe search by JonBradley -->
 <html>
 <head>
     <title>YouTubeFastSearch</title>
@@ -63,8 +64,6 @@ div.desc {
     font-weight: bold;
     background-color: white;
     color: black;
-    padding-top: 1px;
-    padding-bottom: 1px;
     margin-top: 1px;
     margin-bottom: 1px;
     text-align: center;
@@ -103,6 +102,31 @@ p.resultmsg {
 <!--<script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>-->
 <!-- Code for youtube search -->
 <script type="text/javascript" src="../jquery-1.11.1.min.js" charset="utf-8"></script>
+
+
+
+<!-- START SOUND CODE V4.1 HTML5 -->
+<script language="JavaScript" type="text/javascript">
+//<!--
+
+// PLAYER VARIABLES
+
+var mp3snd = "ytsound.mp3";
+var oggsnd = "ytsound.ogg";
+
+document.write('<audio autoplay="autoplay">');
+document.write('<source src="'+mp3snd+'" type="audio/mpeg">');
+document.write('<source src="'+oggsnd+'" type="audio/ogg">');
+document.write('<!--[if lt IE 9]>');
+document.write('<bgsound src="'+mp3snd+'" loop="1">');
+document.write('<![endif]-->');
+document.write('</audio>');
+
+//-->
+</script>
+<br>
+<!-- END SOUND CODE V4.1 -->
+
 <script type="text/javascript" charset="utf-8">
 // Helper function to display JavaScript value on HTML page.
 myak = 'AIzaSyDihpaf2iGC3kUp28b-OAvBZr5VgRax7hs';

@@ -29,8 +29,8 @@ p:hover {
     background: #1C2A42;
 }
 .slideshow {
-    height: 232px;
-    width: 232px;
+    height: 462px;
+    width: 462px;
     margin: auto;
 }
 .slideshow img {
@@ -56,39 +56,49 @@ p:hover {
 <br />
 <div style="display: inline;">
 <div class="slideshow" style="display: none;">
-    <img src="images/Great wall of China.jpg" width="200" height="200" />
-    <img src="images/images (1).jpg" width="200" height="200" />
-    <img src="images/images (2).jpg" width="200" height="200" />
-    <img src="images/images (3).jpg" width="200" height="200" />
-    <img src="images/images (4).jpg" width="200" height="200" />
-    <img src="images/images (5).jpg" width="200" height="200" />
-    <img src="images/images (6).jpg" width="200" height="200" />
-    <img src="images/images (7).jpg" width="200" height="200" />
-    <img src="images/images.jpg" width="200" height="200" />
-    <img src="images/shanghai-china.jpg" width="200" height="200" />
-    <img src="images/tumblr_ljf6xuxoLD1qzdutv.jpg" width="200" height="200" />
+    <img src="images/Great wall of China.jpg" width="450" height="450" />
+    <img src="images/images (1).jpg" width="450" height="450" />
+    <img src="images/images (2).jpg" width="450" height="450" />
+    <img src="images/images (3).jpg" width="450" height="450" />
+    <img src="images/images (4).jpg" width="450" height="450" />
+    <img src="images/images (5).jpg" width="450" height="450" />
+    <img src="images/images (6).jpg" width="450" height="450" />
+    <img src="images/images (7).jpg" width="450" height="450" />
+    <img src="images/images.jpg" width="450" height="450" />
+    <img src="images/shanghai-china.jpg" width="450" height="450" />
+    <img src="images/tumblr_ljf6xuxoLD1qzdutv.jpg" width="450" height="450" />
 </div> <!-- class sideshow -->
 <div class="slideshow2" style="display: none;">
-    <img src="images/Great wall of China.jpg" width="200" height="200" />
-    <img src="images/images (1).jpg" width="200" height="200" />
-    <img src="images/images (2).jpg" width="200" height="200" />
-    <img src="images/images (3).jpg" width="200" height="200" />
-    <img src="images/images (4).jpg" width="200" height="200" />
-    <img src="images/images (5).jpg" width="200" height="200" />
-    <img src="images/images (6).jpg" width="200" height="200" />
-    <img src="images/images (7).jpg" width="200" height="200" />
-    <img src="images/images.jpg" width="200" height="200" />
-    <img src="images/shanghai-china.jpg" width="200" height="200" />
-    <img src="images/tumblr_ljf6xuxoLD1qzdutv.jpg" width="200" height="200" />
+    <img src="images/Great wall of China.jpg" width="450" height="450" />
+    <img src="images/images (1).jpg" width="450" height="450" />
+    <img src="images/images (2).jpg" width="450" height="450" />
+    <img src="images/images (3).jpg" width="450" height="450" />
+    <img src="images/images (4).jpg" width="450" height="450" />
+    <img src="images/images (5).jpg" width="450" height="450" />
+    <img src="images/images (6).jpg" width="450" height="450" />
+    <img src="images/images (7).jpg" width="450" height="450" />
+    <img src="images/images.jpg" width="450" height="450" />
+    <img src="images/shanghai-china.jpg" width="450" height="450" />
+    <img src="images/tumblr_ljf6xuxoLD1qzdutv.jpg" width="450" height="450" />
 </div> <!-- class sideshow -->
 <div>
 
 <br />
 <br />
 
-<div id="other" class="topdiv">
+<!--<div id="other" class="topdiv">
     Trigger the handler
-</div>
+</div>-->
+
+<audio autoplay loop>
+    <source src="guzhen-amazing-grace.mp3" type="audio/mpeg">
+    <source src="guzhen-amazing-grace.ogg" type="audio/ogg">
+    <!--[if lt IE 9]>
+    <bgsound src="'+mp3snd+'" loop="100">
+    <![endif]-->
+</audio>
+
+
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery.cycle.all.js"></script>
