@@ -90,20 +90,20 @@ too!
 JQuery plugin called <a href="http://www.malsup.com/jquery/cycle/">Cycle</a>. This was
 my first time using a plugin for JQuery.
 </p><p>
-<strong>Project #2</strong>: Is a rock scissors paper game. While running through the
+<!--<strong>Project #2</strong>: Is a rock scissors paper game. While running through the
 <a href="http://www.codecademy.com/">CodeCademy</a> tutorials on javascript they have
 you build a simple rock scissors paper game.  I took this game logic and expanded it
 to an a lot more playable game with extra bells and whistles.
+</p><p>-->
+<!--<strong>Project #3</strong>: This project is probably not complete, I was going use this <em>terminal</em> plugin that I found for JQuery, which I think was cool and could make some kind of adventure games in text or something, but this specific project I did not have time for.
+</p><p>-->
+<strong>Project #2</strong>: This project actually started a while back, since I knew a little html and css already.  I did not know much of any JavaScript at the time, so I recently added new code to make it alot more attractive hopefully.
 </p><p>
-<strong>Project #3</strong>: This project is probably not complete, I was going use this <em>terminal</em> plugin that I found for JQuery, which I think was cool and could make some kind of adventure games in text or something, but this specific project I did not have time for.
-</p><p>
-<strong>Project #4</strong>: This project actually started a while back, since I knew a little html and css already.  I did not know much of any JavaScript at the time, so I recently added new code to make it alot more attractive hopefully.
-</p><p>
-<strong>Project #5</strong>: Is a minimal Animal Search, you type in a name and it comes up with a
+<strong>Project #3</strong>: Is a minimal Animal Search, you type in a name and it comes up with a
 picture of that name.  There are not too many animals, I'm mostly trying out how
 to input text for search etc.
 </p><p>
-<strong>Project #6</strong>: This is suppose to be a Youtube Search for looking up videos, you
+<strong>Project #4</strong>: This is suppose to be a Youtube Search for looking up videos, you
 can do that on regular youtube sight, but the youtube site is always slow for me on my computer
 so made this search as something more light weight in the browser.
 </p><p>
@@ -126,27 +126,29 @@ over for more information.
         <img src="images/miniprojss/proj1-3.jpg" width="200" height="200" /> 
         <a href="Mod13/pictures-of-china-sides.html">pictures of china</a>
     </div>
-    </td><td>
+    </td>
+    <!--<td>
     <div id="proj2" class="pics">
         <img src="images/miniprojss/proj2-1.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj2-2.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj2-3.jpg" width="200" height="200" /> 
     </div>
-    </td><td>
+    </td>--><!--<td>
     <div id="proj3" class="pics">
         <img src="images/miniprojss/proj3-1.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj3-2.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj3-3.jpg" width="200" height="200" /> 
     </div>
-    </td></tr>
-    <tr><td>
+    </td></tr>-->
+    <td>
     <div id="proj4" class="pics">
         <img src="images/miniprojss/proj4-1.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj4-2.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj4-3.jpg" width="200" height="200" /> 
         <a href="http://juliashairsalon.biz">Julias Hair Salon</a>
     </div>
-    </td><td>
+    </td></tr>
+    <tr><td>
     <div id="proj5" class="pics">
         <img src="images/miniprojss/proj5-1.jpg" width="200" height="200" /> 
         <img src="images/miniprojss/proj5-2.jpg" width="200" height="200" /> 
@@ -171,9 +173,10 @@ over for more information.
 <br />
 <!-- ======== Final Project Start ======== --->
 <div id="proj0" class="pics">
-    <img src="images/miniprojss/proj0-1.jpg" width="200" height="200" /> 
-    <img src="images/miniprojss/proj0-2.jpg" width="200" height="200" /> 
-    <img src="images/miniprojss/proj0-3.jpg" width="200" height="200" /> 
+    <img src="images/miniprojss/proj0-1.jpg" width="320" height="300" /> 
+    <img src="images/miniprojss/proj0-2.jpg" width="320" height="300" /> 
+    <img src="images/miniprojss/proj0-3.jpg" width="320" height="300" /> 
+    <a href="Mod15/chinese.html">Chinese</a>
 </div>
 <!-- ========= Final Project End ========= --->
 <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
@@ -186,15 +189,15 @@ $(document).ready(function() {
     // side show for proj1
     $('#proj1').cycle({ fx: 'fade', speed: 2500 });
     // side slow for proj2
-    $('#proj2').cycle({ fx: 'fade', speed: 500 });
+    //$('#proj2').cycle({ fx: 'fade', speed: 500 });
     // slideslow for proj3
-    $('#proj3').cycle({ fx: 'fade', speed: 2500 });
+    //$('#proj3').cycle({ fx: 'fade', speed: 2500 });
     // slideslow for proj4
     $('#proj4').cycle({ fx: 'fade', speed: 1500 });
     // slideslow for proj5
-    $('#proj5').cycle({ fx: 'fade', speed: 2500 });
+    $('#proj5').cycle({ fx: 'scrollDown', speed: 2500 });
     // slideslow for proj6
-    $('#proj6').cycle({ fx: 'fade', speed: 4000 });
+    $('#proj6').cycle({ fx: 'scrollUp', speed: 1000 });
     // slideslow for proj0
     $('#proj0').cycle({ fx: 'fade', speed: 3000 });
     // ===== end of slideslow code =====
