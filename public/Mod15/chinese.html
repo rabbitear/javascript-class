@@ -70,7 +70,7 @@
 </head>
 <body>
     <h1>&#25302;&#25918;&#20013;&#25991;</h1>
-    <h2>(Drag and Drop Chinese)</h2>
+    <h2>(Drag and Drop Chinese, Please Refresh the Browser)</h2>
     <div id="playbutton">Click to Play!</div>
 
     <div id="maindiv">
@@ -1238,10 +1238,10 @@
         </a></li>
     </ul> 
     </div>
-
-
     </div>
-    
+    <pre id="musicdiv"></pre> 
+
+
     <script type="text/javascript" src="../jquery-1.11.1.min.js" charset="utf-8"> </script>
     <script type="text/javascript" src="../jquery-ui-1.11.2/jquery-ui.min.js" charset="utf-8"> </script>
     <script type="text/javascript" charset="utf-8">
@@ -1260,14 +1260,30 @@
         $('#playbutton').click( function(){
             var listItems = $("#emptybox ul li");
             var sentenceString = "";
-            listItems.each(function(idx, li) {
-                var pinyin = $(li);
-                console.log(pinyin.attr('id'));
-                sentenceString = sentenceString + " " + pinyin.attr('id');
+            var audiohtml = "";
 
+            listItems.each(function(idx, li) {
+                var pinyinObj = $(li);
+                var pinyin = pinyinObj.attr('id');
+                if(pinyin !== undefined) {
+                    console.log("typeof pinyin returns: " + typeof pinyin);
+                    var mp3snd = "voice/" + pinyin + ".mp3";
+                    var oggsnd = "voice/" + pinyin + ".ogg";
+
+                    console.log('filename mp3: ' + mp3snd);
+                    console.log('filename ogg: ' + oggsnd);
+                    sentenceString = sentenceString + " " + pinyin;
+
+                    audiohtml += '<audio autoplay="autoplay">';
+                    audiohtml += '<source src="'+mp3snd+'" type="audio/mpeg">';
+                    audiohtml += '<source src="'+oggsnd+'" type="audio/ogg">';
+                    audiohtml += '</audio>';
+                }
             });
             console.log("sentence: " + sentenceString);
-            alert('YOUR SENTENCE IS: ' + sentenceString);
+            console.log("audiohtml: " + audiohtml);
+            alert('YOUR SENTENCE IS and you probably can not here it yet: ' + sentenceString);
+            $('#musicdiv').html(audiohtml);
         });
     });    
 
