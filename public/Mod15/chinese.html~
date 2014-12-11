@@ -9,23 +9,44 @@
         background-color: black;
         color: #ffffcc;
     }
+    h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
     .bigfont {
         font-size: 28px;
     }
     .smallfont {
         font-size: 14px;
     }
+    #maindev {
+        left-margin: auto;
+        right-margin: auto;
+    }
+    #delimiter {
+        background-color: #888888;
+        height: 12px;
+        left-margin: 30px;
+        right-margin: 30px;
+    }
     .sortable-list {
-        height: 85px;
+        //height: 85px;
         padding: 0px; // in all browsers
         margin: 0px; // to remove left-indention
         font-family: arial, helvetica, sans-serif;
-        white-space: nowrap;
+        white-space: wrap;
         list-style-type: none;
     } 
     .sortable-list li {
+        left-margin: 20px;
+        right-margin: 20px;
         text-align: center;
-        display: inline;
+        //display: inline;
+        display: inline-block;
     }
     .sortable-list a {
         background: #ffffcc;
@@ -38,6 +59,8 @@
         text-decoration: none;
         float: left;
         border: 1px solid #000;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px #888888;
     }
     .sortable-list li a:hover {
         background: #666652;
@@ -46,50 +69,1208 @@
     </style>    
 </head>
 <body>
-    <h1 id="heading">Drag and Drop Test</h1>
-    <h2 id="heading">&#22823;&#23478;</h2>
+    <h1>&#25302;&#25918;&#20013;&#25991;</h1>
+    <h2>(Drag and Drop Chinese)</h2>
+    <div id="playbutton">Click to Play!</div>
+
     <div id="maindiv">
-    <div id="topbox">
+
+    <!-- box to build the sentence -->
+    <div id="emptybox">
     <ul class="sortable-list">
-        <li class="sortable-item"><a href="#">
-            <span class="bigfont">&#22823;&#23478;</span><br />
-            <span class="smallfont">ba jia</span>
-        </a></li>
-        <li class="sortable-item">
-        <a href="#">
-            <span class="bigfont">&#20316;</span><br />
-            <span class="smallfont">zuo4</span>
-        </a></li>
-        <li class="sortable-item"><a href="#">Item C</a></li>
-        <li class="sortable-item"><a href="#">Item D</a></li>
-        <li class="sortable-item"><a href="#">Item E</a></li>
-    </ul> 
-    <div id="bottombox">
-    <ul class="sortable-list">
-        <li class="sortable-item"><a href="#">Item F</a></li>
-        <li class="sortable-item"><a href="#">Item G</a></li>
-        <li class="sortable-item"><a href="#">Item H</a></li>
-        <li class="sortable-item"><a href="#">Item I</a></li>
-        <li class="sortable-item"><a href="#">Item J</a></li>
+        <li class="dummy-item" style="visibility: hidden;"><a href="#">Drag Chars<br />Here</a></li>
     </ul>
     </div>
-</div>
+
+    <!-- line in the middle to sperate the chips -->
+    <div id="delimiter"></div>    
+
+    <!-- box containing the characters -->
+    <div id="charsbox">
+    <ul class="sortable-list">
+        <li id="zai4jian4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zai4jian4</span>
+        </a></li>
+        <li id="zhu4-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhu4-v2</span>
+        </a></li>
+        <li id="ming2zi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ming2zi</span>
+        </a></li>
+        <li id="hao2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hao2</span>
+        </a></li>
+        <li id="che1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">che1</span>
+        </a></li>
+        <li id="hui2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hui2</span>
+        </a></li>
+        <li id="tu2shu1guan3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tu2shu1guan3</span>
+        </a></li>
+        <li id="sha1la1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">sha1la1</span>
+        </a></li>
+        <li id="duo1shao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">duo1shao3</span>
+        </a></li>
+        <li id="ye3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ye3</span>
+        </a></li>
+        <li id="tes1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tes1</span>
+        </a></li>
+        <li id="shui3guo3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shui3guo3</span>
+        </a></li>
+        <li id="hai2shi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hai2shi4</span>
+        </a></li>
+        <li id="xiang3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiang3</span>
+        </a></li>
+        <li id="fang2jian1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fang2jian1</span>
+        </a></li>
+        <li id="zhu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhu4</span>
+        </a></li>
+        <li id="tain2dian3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tain2dian3</span>
+        </a></li>
+        <li id="qu2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">qu2</span>
+        </a></li>
+        <li id="gong1yu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gong1yu4</span>
+        </a></li>
+        <li id="mei2you3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mei2you3</span>
+        </a></li>
+        <li id="shuang1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shuang1</span>
+        </a></li>
+        <li id="gong1ke4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gong1ke4</span>
+        </a></li>
+        <li id="ling2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ling2</span>
+        </a></li>
+        <li id="zhong1tou2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhong1tou2</span>
+        </a></li>
+        <li id="yi2diar3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yi2diar3</span>
+        </a></li>
+        <li id="gong1cheng2shi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gong1cheng2shi1</span>
+        </a></li>
+        <li id="xian1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xian1</span>
+        </a></li>
+        <li id="ta1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ta1</span>
+        </a></li>
+        <li id="da4xue2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da4xue2</span>
+        </a></li>
+        <li id="bing1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">bing1</span>
+        </a></li>
+        <li id="san1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">san1</span>
+        </a></li>
+        <li id="cai2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">cai2</span>
+        </a></li>
+        <li id="xi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xi4</span>
+        </a></li>
+        <li id="qi3chuang2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">qi3chuang2</span>
+        </a></li>
+        <li id="cong2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">cong2</span>
+        </a></li>
+        <li id="hun2tun"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hun2tun</span>
+        </a></li>
+        <li id="shen2meshi2hou"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shen2meshi2hou</span>
+        </a></li>
+        <li id="dian4shi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian4shi4</span>
+        </a></li>
+        <li id="wen2xue2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wen2xue2</span>
+        </a></li>
+        <li id="xue2qi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xue2qi1</span>
+        </a></li>
+        <li id="yi1sheng1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yi1sheng1</span>
+        </a></li>
+        <li id="nai3nai"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nai3nai</span>
+        </a></li>
+        <li id="ka1fei1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ka1fei1</span>
+        </a></li>
+        <li id="liu2hua4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">liu2hua4</span>
+        </a></li>
+        <li id="zai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zai4</span>
+        </a></li>
+        <li id="chi1fan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">chi1fan2</span>
+        </a></li>
+        <li id="Ding1Ming2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Ding1Ming2</span>
+        </a></li>
+        <li id="sheng1huo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">sheng1huo2</span>
+        </a></li>
+        <li id="yin3liao4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yin3liao4</span>
+        </a></li>
+        <li id="hong2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hong2</span>
+        </a></li>
+        <li id="wan3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wan3</span>
+        </a></li>
+        <li id="shao1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shao1</span>
+        </a></li>
+        <li id="cai4dan1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">cai4dan1</span>
+        </a></li>
+        <li id="chao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">chao3</span>
+        </a></li>
+        <li id="bing3gan1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">bing3gan1</span>
+        </a></li>
+        <li id="shu1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shu1</span>
+        </a></li>
+        <li id="zuo2ye2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zuo2ye2</span>
+        </a></li>
+        <li id="shi2you3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shi2you3</span>
+        </a></li>
+        <li id="xi3huan1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xi3huan1</span>
+        </a></li>
+        <li id="kuai4zi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">kuai4zi</span>
+        </a></li>
+        <li id="mang2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mang2</span>
+        </a></li>
+        <li id="ren4shi-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ren4shi-v2</span>
+        </a></li>
+        <li id="guo4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">guo4</span>
+        </a></li>
+        <li id="hen3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hen3</span>
+        </a></li>
+        <li id="fu3xiu1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fu3xiu1</span>
+        </a></li>
+        <li id="ji3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ji3</span>
+        </a></li>
+        <li id="fen1zhong1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fen1zhong1</span>
+        </a></li>
+        <li id="men2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">men2</span>
+        </a></li>
+        <li id="wu3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wu3</span>
+        </a></li>
+        <li id="hao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hao3</span>
+        </a></li>
+        <li id="ge4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ge4</span>
+        </a></li>
+        <li id="shi2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shi2</span>
+        </a></li>
+        <li id="dian4ying3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian4ying3</span>
+        </a></li>
+        <li id="fu2wu4yuan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fu2wu4yuan2</span>
+        </a></li>
+        <li id="nan2peng2you"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nan2peng2you</span>
+        </a></li>
+        <li id="tong2xue2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tong2xue2</span>
+        </a></li>
+        <li id="wai4gong1-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wai4gong1-v2</span>
+        </a></li>
+        <li id="Zhang1You3peng2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Zhang1You3peng2</span>
+        </a></li>
+        <li id="da4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da4</span>
+        </a></li>
+        <li id="Han2guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Han2guo2</span>
+        </a></li>
+        <li id="ne"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ne</span>
+        </a></li>
+        <li id="Xiao3ming2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Xiao3ming2</span>
+        </a></li>
+        <li id="xian1sheng"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xian1sheng</span>
+        </a></li>
+        <li id="wei4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wei4</span>
+        </a></li>
+        <li id="wo3jiu4shi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wo3jiu4shi4</span>
+        </a></li>
+        <li id="nan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nan2</span>
+        </a></li>
+        <li id="zuo4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zuo4</span>
+        </a></li>
+        <li id="di4zhi3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">di4zhi3</span>
+        </a></li>
+        <li id="yi2xia4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yi2xia4</span>
+        </a></li>
+        <li id="Sun1Xinmei3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Sun1Xinmei3</span>
+        </a></li>
+        <li id="xiao1ye4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiao1ye4</span>
+        </a></li>
+        <li id="gei3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gei3</span>
+        </a></li>
+        <li id="jie3jie"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jie3jie</span>
+        </a></li>
+        <li id="niu2rou4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">niu2rou4</span>
+        </a></li>
+        <li id="can1ting1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">can1ting1</span>
+        </a></li>
+        <li id="hai2hao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hai2hao3</span>
+        </a></li>
+        <li id="fang2zi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fang2zi</span>
+        </a></li>
+        <li id="lei2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">lei2</span>
+        </a></li>
+        <li id="hui2lai"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hui2lai</span>
+        </a></li>
+        <li id="zhi1dao2le"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhi1dao2le</span>
+        </a></li>
+        <li id="lu4shi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">lu4shi1</span>
+        </a></li>
+        <li id="Niu3yue1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Niu3yue1</span>
+        </a></li>
+        <li id="jie2shao2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jie2shao2</span>
+        </a></li>
+        <li id="Ri4ben3-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Ri4ben3-v2</span>
+        </a></li>
+        <li id="sher4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">sher4</span>
+        </a></li>
+        <li id="lao3shi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">lao3shi1</span>
+        </a></li>
+        <li id="da3dian4hua4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da3dian4hua4</span>
+        </a></li>
+        <li id="mei3tian1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mei3tian1</span>
+        </a></li>
+        <li id="cha4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">cha4</span>
+        </a></li>
+        <li id="Yang2Huan1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Yang2Huan1</span>
+        </a></li>
+        <li id="cha2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">cha2</span>
+        </a></li>
+        <li id="mei4mei"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mei4mei</span>
+        </a></li>
+        <li id="nian2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nian2</span>
+        </a></li>
+        <li id="da3cuo4le"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da3cuo4le</span>
+        </a></li>
+        <li id="xing4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xing4</span>
+        </a></li>
+        <li id="pan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">pan2</span>
+        </a></li>
+        <li id="ke3le4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ke3le4</span>
+        </a></li>
+        <li id="shi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shi4</span>
+        </a></li>
+        <li id="bai2fan4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">bai2fan4</span>
+        </a></li>
+        <li id="yu2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yu2</span>
+        </a></li>
+        <li id="dian4nao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian4nao3</span>
+        </a></li>
+        <li id="shang4wang3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shang4wang3</span>
+        </a></li>
+        <li id="xiao3shi2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiao3shi2</span>
+        </a></li>
+        <li id="ba1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ba1</span>
+        </a></li>
+        <li id="hai2zi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hai2zi</span>
+        </a></li>
+        <li id="fa1duan3xin4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fa1duan3xin4</span>
+        </a></li>
+        <li id="nin2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nin2</span>
+        </a></li>
+        <li id="chu2shi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">chu2shi1</span>
+        </a></li>
+        <li id="lai2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">lai2</span>
+        </a></li>
+        <li id="liang3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">liang3</span>
+        </a></li>
+        <li id="da3qiu2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da3qiu2</span>
+        </a></li>
+        <li id="Ying1guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Ying1guo2</span>
+        </a></li>
+        <li id="Mei3guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Mei3guo2</span>
+        </a></li>
+        <li id="xue2wen2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xue2wen2</span>
+        </a></li>
+        <li id="na2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">na2</span>
+        </a></li>
+        <li id="ying1wen2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ying1wen2</span>
+        </a></li>
+        <li id="he1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">he1</span>
+        </a></li>
+        <li id="xing2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xing2</span>
+        </a></li>
+        <li id="Jian1a2da4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Jian1a2da4</span>
+        </a></li>
+        <li id="bu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">bu4</span>
+        </a></li>
+        <li id="zen3meyang4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zen3meyang4</span>
+        </a></li>
+        <li id="tai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tai4</span>
+        </a></li>
+        <li id="jia1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jia1</span>
+        </a></li>
+        <li id="shang1ren2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shang1ren2</span>
+        </a></li>
+        <li id="guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">guo2</span>
+        </a></li>
+        <li id="ziao3jie3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ziao3jie3</span>
+        </a></li>
+        <li id="wan3fan4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wan3fan4</span>
+        </a></li>
+        <li id="Fang1Xiao3wen2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Fang1Xiao3wen2</span>
+        </a></li>
+        <li id="zuo4-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zuo4-v2</span>
+        </a></li>
+        <li id="xie4xie"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xie4xie</span>
+        </a></li>
+        <li id="xiu1xi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiu1xi</span>
+        </a></li>
+        <li id="dui4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dui4</span>
+        </a></li>
+        <li id="dui4buqi3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dui4buqi3</span>
+        </a></li>
+        <li id="zao3fan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zao3fan2</span>
+        </a></li>
+        <li id="mang2-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mang2-v2</span>
+        </a></li>
+        <li id="ri4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ri4</span>
+        </a></li>
+        <li id="wu3fan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wu3fan2</span>
+        </a></li>
+        <li id="liu2yan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">liu2yan2</span>
+        </a></li>
+        <li id="jiu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jiu4</span>
+        </a></li>
+        <li id="shei2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shei2</span>
+        </a></li>
+        <li id="Zhong1wen2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Zhong1wen2</span>
+        </a></li>
+        <li id="bei1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">bei1</span>
+        </a></li>
+        <li id="ke4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ke4</span>
+        </a></li>
+        <li id="shu4xue2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shu4xue2</span>
+        </a></li>
+        <li id="shou3ji1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shou3ji1</span>
+        </a></li>
+        <li id="jia1ting2zhu3fu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jia1ting2zhu3fu4</span>
+        </a></li>
+        <li id="zhi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhi1</span>
+        </a></li>
+        <li id="kao3shi2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">kao3shi2</span>
+        </a></li>
+        <li id="yue4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yue4</span>
+        </a></li>
+        <li id="tong1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tong1</span>
+        </a></li>
+        <li id="shui4jiao4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shui4jiao4</span>
+        </a></li>
+        <li id="na3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">na3</span>
+        </a></li>
+        <li id="qi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">qi1</span>
+        </a></li>
+        <li id="hu4shi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hu4shi</span>
+        </a></li>
+        <li id="ji4suan4ji1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ji4suan4ji1</span>
+        </a></li>
+        <li id="tang1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">tang1</span>
+        </a></li>
+        <li id="mai3dan1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mai3dan1</span>
+        </a></li>
+        <li id="rong2yi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">rong2yi4</span>
+        </a></li>
+        <li id="ben3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ben3</span>
+        </a></li>
+        <li id="yu3yan2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yu3yan2</span>
+        </a></li>
+        <li id="de"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">de</span>
+        </a></li>
+        <li id="Wang2Hong2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Wang2Hong2</span>
+        </a></li>
+        <li id="wai4po2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wai4po2</span>
+        </a></li>
+        <li id="xue2sheng"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xue2sheng</span>
+        </a></li>
+        <li id="hui4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hui4</span>
+        </a></li>
+        <li id="dian4zi3you2jian4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian4zi3you2jian4</span>
+        </a></li>
+        <li id="kan4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">kan4</span>
+        </a></li>
+        <li id="ma1ma"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ma1ma</span>
+        </a></li>
+        <li id="xin2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xin2</span>
+        </a></li>
+        <li id="he2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">he2</span>
+        </a></li>
+        <li id="xiao3fei4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiao3fei4</span>
+        </a></li>
+        <li id="ping2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ping2</span>
+        </a></li>
+        <li id="cai2-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">cai2-v2</span>
+        </a></li>
+        <li id="ge1ge"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ge1ge</span>
+        </a></li>
+        <li id="Zhang1Zheng4ran2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Zhang1Zheng4ran2</span>
+        </a></li>
+        <li id="jiu3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jiu3</span>
+        </a></li>
+        <li id="Chen2Ai4wen3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Chen2Ai4wen3</span>
+        </a></li>
+        <li id="mao1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mao1</span>
+        </a></li>
+        <li id="xia4wu3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xia4wu3</span>
+        </a></li>
+        <li id="Xi1ban1ya2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Xi1ban1ya2</span>
+        </a></li>
+        <li id="nar3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nar3</span>
+        </a></li>
+        <li id="shuo1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shuo1</span>
+        </a></li>
+        <li id="hai3xian1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hai3xian1</span>
+        </a></li>
+        <li id="dui4le"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dui4le</span>
+        </a></li>
+        <li id="ba4ba"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ba4ba</span>
+        </a></li>
+        <li id="fan4guan3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fan4guan3</span>
+        </a></li>
+        <li id="gong1zuo4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gong1zuo4</span>
+        </a></li>
+        <li id="wang3zhan4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wang3zhan4</span>
+        </a></li>
+        <li id="dian4hua4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian4hua4</span>
+        </a></li>
+        <li id="ba"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ba</span>
+        </a></li>
+        <li id="ban4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ban4</span>
+        </a></li>
+        <li id="ye2ye"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ye2ye</span>
+        </a></li>
+        <li id="ren4shi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ren4shi</span>
+        </a></li>
+        <li id="nu3peng2you"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">nu3peng2you</span>
+        </a></li>
+        <li id="ji1rou4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ji1rou4</span>
+        </a></li>
+        <li id="jin1tian1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jin1tian1</span>
+        </a></li>
+        <li id="gong1cheng2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gong1cheng2</span>
+        </a></li>
+        <li id="xiao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiao3</span>
+        </a></li>
+        <li id="zhan4xian4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhan4xian4</span>
+        </a></li>
+        <li id="gou3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gou3</span>
+        </a></li>
+        <li id="jiao4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jiao4</span>
+        </a></li>
+        <li id="shang2ke2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shang2ke2</span>
+        </a></li>
+        <li id="wai4gong1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wai4gong1</span>
+        </a></li>
+        <li id="da2jia1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da2jia1</span>
+        </a></li>
+        <li id="gui2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gui2</span>
+        </a></li>
+        <li id="wei4-v2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wei4-v2</span>
+        </a></li>
+        <li id="Fa3guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Fa3guo2</span>
+        </a></li>
+        <li id="dian3cai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian3cai4</span>
+        </a></li>
+        <li id="you3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">you3</span>
+        </a></li>
+        <li id="peng2you"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">peng2you</span>
+        </a></li>
+        <li id="ma"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ma</span>
+        </a></li>
+        <li id="liu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">liu4</span>
+        </a></li>
+        <li id="ming2pian4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ming2pian4</span>
+        </a></li>
+        <li id="ai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ai4</span>
+        </a></li>
+        <li id="ren2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ren2</span>
+        </a></li>
+        <li id="dian3zhong1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian3zhong1</span>
+        </a></li>
+        <li id="dan4gao1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dan4gao1</span>
+        </a></li>
+        <li id="qing1cai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">qing1cai4</span>
+        </a></li>
+        <li id="shen2me"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shen2me</span>
+        </a></li>
+        <li id="xiong1di2jie3mei2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiong1di2jie3mei2</span>
+        </a></li>
+        <li id="duo1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">duo1</span>
+        </a></li>
+        <li id="ni3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ni3</span>
+        </a></li>
+        <li id="Fa3wen2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Fa3wen2</span>
+        </a></li>
+        <li id="da4xue2sheng1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">da4xue2sheng1</span>
+        </a></li>
+        <li id="Chen2Ai4wen2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Chen2Ai4wen2</span>
+        </a></li>
+        <li id="zheng4zai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zheng4zai4</span>
+        </a></li>
+        <li id="hao4ma3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">hao4ma3</span>
+        </a></li>
+        <li id="Zhong1guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Zhong1guo2</span>
+        </a></li>
+        <li id="deng3yi2xiar4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">deng3yi2xiar4</span>
+        </a></li>
+        <li id="mian4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">mian4</span>
+        </a></li>
+        <li id="lu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">lu4</span>
+        </a></li>
+        <li id="Li3Wen2zhong1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Li3Wen2zhong1</span>
+        </a></li>
+        <li id="jiao3zi"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">jiao3zi</span>
+        </a></li>
+        <li id="chong3wu4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">chong3wu4</span>
+        </a></li>
+        <li id="dou4fu"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dou4fu</span>
+        </a></li>
+        <li id="miao3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">miao3</span>
+        </a></li>
+        <li id="yi3hou4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yi3hou4</span>
+        </a></li>
+        <li id="wo3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wo3</span>
+        </a></li>
+        <li id="chang2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">chang2</span>
+        </a></li>
+        <li id="shui3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">shui3</span>
+        </a></li>
+        <li id="wang3luo4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wang3luo4</span>
+        </a></li>
+        <li id="De2guo2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">De2guo2</span>
+        </a></li>
+        <li id="guo3zhi1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">guo3zhi1</span>
+        </a></li>
+        <li id="er4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">er4</span>
+        </a></li>
+        <li id="si4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">si4</span>
+        </a></li>
+        <li id="you3diar3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">you3diar3</span>
+        </a></li>
+        <li id="xia2ke2"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xia2ke2</span>
+        </a></li>
+        <li id="yi2qi3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yi2qi3</span>
+        </a></li>
+        <li id="ke3shi4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ke3shi4</span>
+        </a></li>
+        <li id="qing3wen4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">qing3wen4</span>
+        </a></li>
+        <li id="dou1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dou1</span>
+        </a></li>
+        <li id="wo3men"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wo3men</span>
+        </a></li>
+        <li id="dian3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">dian3</span>
+        </a></li>
+        <li id="main4bao1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">main4bao1</span>
+        </a></li>
+        <li id="yao4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">yao4</span>
+        </a></li>
+        <li id="wan3shang"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">wan3shang</span>
+        </a></li>
+        <li id="fan1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">fan1</span>
+        </a></li>
+        <li id="xiao4nei4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiao4nei4</span>
+        </a></li>
+        <li id="zhu1rou4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhu1rou4</span>
+        </a></li>
+        <li id="gen1"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">gen1</span>
+        </a></li>
+        <li id="xiao4wai4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xiao4wai4</span>
+        </a></li>
+        <li id="zhuan1ye3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">zhuan1ye3</span>
+        </a></li>
+        <li id="Ri4ben3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Ri4ben3</span>
+        </a></li>
+        <li id="Hang4guo4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">Hang4guo4</span>
+        </a></li>
+        <li id="xia4ci4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xia4ci4</span>
+        </a></li>
+        <li id="xie3"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">xie3</span>
+        </a></li>
+        <li id="ran2hou4"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ran2hou4</span>
+        </a></li>
+    </ul> 
+    </div>
+
+
+    </div>
     
     <script type="text/javascript" src="../jquery-1.11.1.min.js" charset="utf-8"> </script>
     <script type="text/javascript" src="../jquery-ui-1.11.2/jquery-ui.min.js" charset="utf-8"> </script>
     <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
-        $('#topbox .sortable-list').sortable({
-            connectWith: '#bottombox .sortable-list',
+        console.log("DOM is done loading.");
+        $('#charsbox .sortable-list').sortable({
+            connectWith: '#emptybox .sortable-list',
             containment: '#maindiv',
             placeholder: 'placeholder'
         });
-        $('#bottombox .sortable-list').sortable({
-            connectWith: '#topbox .sortable-list',
+        $('#emptybox .sortable-list').sortable({
+            connectWith: '#charsbox .sortable-list',
             containment: '#maindiv',
             placeholder: 'placeholder'
+        });
+        $('#playbutton').click( function(){
+            var listItems = $("#emptybox ul li");
+            var sentenceString = "";
+            listItems.each(function(idx, li) {
+                var pinyin = $(li);
+                console.log(pinyin.attr('id'));
+                sentenceString = sentenceString + " " + pinyin.attr('id');
+
+            });
+            console.log("sentence: " + sentenceString);
+            alert('YOUR SENTENCE IS: ' + sentenceString);
         });
     });    
+
     </script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Dragdrop Testing</title>
+    <style type="text/css" media="screen">
+    body {
+        background-color: black;
+        color: #ffffcc;
+    }
+    .bigfont {
+        font-size: 28px;
+    }
+    .smallfont {
+        font-size: 14px;
+    }
+    #maindev {
+        left-margin: auto;
+        right-margin: auto;
+    }
+    .sortable-list {
+        //height: 85px;
+        padding: 0px; // in all browsers
+        margin: 0px; // to remove left-indention
+        font-family: arial, helvetica, sans-serif;
+        white-space: nowrap;
+        list-style-type: none;
+    } 
+    .sortable-list li {
+        left-margin: 20px;
+        right-margin: 20px;
+        text-align: center;
+        //display: inline;
+        display: inline-block;
+    }
+    .sortable-list a {
+        background: #ffffcc;
+        color: black;
+        height: 60px;
+        width: 80px;
+        padding: 0.2em 1em; // necessary to make into box.
+        background: #fc6;
+        color: #000;
+        text-decoration: none;
+        float: left;
+        border: 1px solid #000;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px #888888;
+    }
+    .sortable-list li a:hover {
+        background: #666652;
+        color: #cccca3;
+    }
+    </style>    
+</head>
+<body>
+    <h1 id="heading">Drag and Drop Chinese</h1>
+    <h2 id="heading">&#22823;&#23478;</h2>
+    <div id="maindiv">
+    <div id="topbox">
+    <ul class="sortable-list">
+        <li class="sortable-item"><a href="#">
+            <span class="bigfont">&#22823;&#23478;</span><br />
+            <span class="smallfont">ba jia</span>
+        </a></li>
+        <li class="sortable-item">
+        <a href="#">
+            <span class="bigfont">&#20316;</span><br />
+            <span class="smallfont">zu&#242;</span>
+        </a></li>
+        <li class="sortable-item"><a href="#">Item C</a></li>
+        <li class="sortable-item"><a href="#">Item D</a></li>
+        <li class="sortable-item"><a href="#">Item E</a></li>
+    </ul> 
+    <div id="bottombox">
+    <ul class="sortable-list">
+        <li class="sortable-item"><a href="#">Item F</a></li>
+        <li class="sortable-item"><a href="#">Item G</a></li>
+        <li class="sortable-item"><a href="#">Item H</a></li>
+        <li class="sortable-item"><a href="#">Item I</a></li>
+        <li class="sortable-item"><a href="#">Item J</a></li>
+    </ul>
+    </div>
+</div>
+    
+    <script type="text/javascript" src="../jquery-1.11.1.min.js" charset="utf-8"> </script>
+    <script type="text/javascript" src="../jquery-ui-1.11.2/jquery-ui.min.js" charset="utf-8"> </script>
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('#topbox .sortable-list').sortable({
+            connectWith: '#bottombox .sortable-list',
+            containment: '#maindiv',
+            placeholder: 'placeholder'
+        });
+        $('#bottombox .sortable-list').sortable({
+            connectWith: '#topbox .sortable-list',
+            containment: '#maindiv',
+            placeholder: 'placeholder'
+        });
+    });    
+
+    </script>
+</body>
+</html>
