@@ -33,6 +33,19 @@
         left-margin: 30px;
         right-margin: 30px;
     }
+    #playbutton {
+        font-family: arial, helvetica, sans-serif;
+        left-margin: auto;
+        right-margin: auto;
+        width: 150px;
+        font-size: 20px;
+        text-align: center;
+        background-color: #ffffcc;
+        color: black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
     .sortable-list {
         //height: 85px;
         padding: 0px; // in all browsers
@@ -49,7 +62,7 @@
         display: inline-block;
     }
     .sortable-list a {
-        background: #ffffcc;
+        background-color: #ffffcc;
         color: black;
         height: 60px;
         width: 80px;
@@ -70,7 +83,7 @@
 </head>
 <body>
     <h1>&#25302;&#25918;&#20013;&#25991;</h1>
-    <h2>(Drag and Drop Chinese)</h2>
+    <h2>(Drag and Drop Chinese, Please Refresh the Browser)</h2>
     <div id="playbutton">Click to Play!</div>
 
     <div id="maindiv">
@@ -1282,7 +1295,7 @@
             });
             console.log("sentence: " + sentenceString);
             console.log("audiohtml: " + audiohtml);
-            alert('YOUR SENTENCE IS: ' + sentenceString);
+            alert('YOUR SENTENCE IS and you probably can not here it yet: ' + sentenceString);
             $('#musicdiv').html(audiohtml);
         });
     });    
